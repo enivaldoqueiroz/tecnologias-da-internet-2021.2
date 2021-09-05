@@ -16,8 +16,8 @@
     c. Adicione à calculadora um select (combobox) que permita selecionar a operação desejada 
     (+,-, * e /), e após selecionar a opção a operação correspondente é realizada.
     
-###    *Teste pós implementação
-    ![](https://github.com/enivaldoqueiroz/tecnologias-de-internet-2021.2/blob/main/_01_calculadora_com_input_text/img001.png)
+### Teste pós implementação
+![](https://github.com/enivaldoqueiroz/tecnologias-de-internet-2021.2/blob/main/_01_calculadora_com_input_text/img001.png)
     
 ### 2. Crie um formulário, por exemplo, o cadastro de um aluno ou de uma empresa, que possua:
     
