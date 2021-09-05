@@ -8,7 +8,9 @@
 
 ### Implemente no mínimo duas questões.
 
-### 1. Crie uma calculadora simples com dois números, via input text, e permita realizar as operações de (+, -, * e /) ao pressionar o botão da respectiva operação.
+### 1. Crie uma calculadora simples com dois números, via input text, e permita realizar 
+as operações de (+, -, * e /) ao pressionar o botão da respectiva operação.
+
     
     a. Debug as operações no browser
     b. Utilize o console.log para visualizar as informações no browser
