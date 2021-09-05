@@ -1,4 +1,4 @@
-## Tecnologias de Internet 2021.2
+# Tecnologias de Internet 2021.2
 
     CURSO: CIÊNCIA DA COMPUTAÇÃO 
     DISCIPLINA: TECNOLOGIAS DA INTERNET 
@@ -10,8 +10,10 @@
     
     a. Debug as operações no browser
     b. Utilize o console.log para visualizar as informações no browser
-    c. Adicione à calculadora um select (combobox) que permita selecionar a operação desejada (+,-, * e /), e após selecionar a opção a operação correspondente é                realizada.
-# 2. Crie um formulário, por exemplo, o cadastro de um aluno ou de uma empresa, que possua:
+    c. Adicione à calculadora um select (combobox) que permita selecionar a operação desejada 
+    (+,-, * e /), e após selecionar a opção a operação correspondente é realizada.
+    
+## 2. Crie um formulário, por exemplo, o cadastro de um aluno ou de uma empresa, que possua:
     
     a. um input text
         i. Crie uma função Javascript que apresenta a quantidade de caracteres digitados.
@@ -23,7 +25,8 @@
         atividade deve ser feita de duas formas: acionando um botão para visualizar todas as
         opções selecionadas, por meio de um alert ou em uma tabela, e também ao clicar nas
         opções.CENTRO UNIVERSITÁRIO FARIAS BRITO
-# 3. Observe o layout do seu teclado numérico e crie uma calculadora seguindo um layout similar. Para facilitar sua calculadora aceitará apenas números inteiros positivos (Dica: Use tabelas para realizar o merge das células e não é necessário fazer a validação dos números)
+        
+## 3. Observe o layout do seu teclado numérico e crie uma calculadora seguindo um layout similar. Para facilitar sua calculadora aceitará apenas números inteiros positivos (Dica: Use tabelas para realizar o merge das células e não é necessário fazer a validação dos números)
 
     a. Ao selecionar os botões, o valor selecionado, devem aparecer em um input text que mostra a
     expressão formada, mas cujo valor da expressão não é possível alterar (Dica: use readonly)
