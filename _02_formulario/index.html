@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2 - Contador de caracteres input e textarea</title>
+
+    <script src="js/scripts.js" defer></script>
+    <script>
+
+        function mostrarInformacao(){
+            var inputText = document.getElementById("inputText").value;
+            var op =  document.getElementById("op").value;
+            var checkbox =  document.getElementById("checkbox").value;
+
+            alert(  'Nome da empresa: ' + inputText + '  ' +
+                    'Tipo de atendimento: ' + op +  ' ' +
+                    'Serviços oferecidos:' + checkbox);
+            
+        }
+
+        function contaCaracteresInputText(texto){
+            var limite = 200;
+            var campo = texto.value.length;
+            var maxLength = document.getElementById("inputText").setAttribute("maxLength", limite);
+            var divMsgInputText = document.getElementById("divMsgInputText");
+
+            //Subtrai o limite de caracteres com os digitados
+            //var restante = limite - campo;
+            var restante = campo + "/" + limite;
+
+            divMsgInputText.innerHTML = restante;
+        }
+
+        function contaCaracteresTextArea(texto){
+            var limite = 144;
+            var campo = texto.value.length;
+            var maxLength = document.getElementById("textArea").setAttribute("maxLength", limite);
+            var divMsg = document.getElementById("divMsg");
+
+            //Subtrai o limite de caracteres com os digitados
+            //var restante = limite - campo;
+            var restante = campo + "/" + limite;
+
+            divMsg.innerHTML = restante;
+        }
+        
+    </script>
+
+</head>
+<body>
+    <form action="">
+    <div>
+        <div>Nome da empresa:</div>
+        <div><input 
+            type="text" 
+            name="inputText" 
+            id="inputText"
+            onclick="contaCaracteresInputText(this)" 
+            onkeydown="contaCaracteresInputText(this)" 
+            onkeyup="contaCaracteresInputText(this)"></div>
+        <div id="divMsgInputText"></div>
+    </div>
+
+    <br/>
+
+    <div>
+        <div>Tipo de atendimento:</div>
+        <div>
+            <input type="radio" name="op" id="op">Pessoa Fisica</input><br/>
+            <input type="radio" name="op" id="op">Pessoa Juridica</input>
+        </div>
+    </div>
+
+    <br/>
+
+    <div>
+        
+        <div>Serviços oferecidos:</div>
+        <div>
+            <input type="checkbox" name="checkbox1" id="checkbox">Manutenção em Informatica</input><br/>
+            <input type="checkbox" name="checkbox2" id="checkbox">Logistica</input><br/>
+            <input type="checkbox" name="checkbox3" id="checkbox">Contabilidade</input><br/>
+            <input type="checkbox" name="checkbox4" id="checkbox">Outros</input><br/>
+        </div>
+    </div>
+
+    <br/>
+
+    <div>
+        <div>Formas de pagamento:</div>
+        <div>
+            <select name="servicos" id="servicos" size=5 multiple>
+                <option value="">-- Selecione uma opcao --</option>
+                <option value="Boleto">Boleto</option>
+                <option value="AVista">A vista</option>
+                <option value="Pix">Pix</option>
+                <option value="Cartao">Cartão</option>
+            </select>
+        </div>
+        
+    </div>
+
+    <br/>
+
+    <div>
+        <div>Observações</div>
+        <div>
+        <textarea 
+        name="textArea" 
+        id="textArea" 
+        cols="50" 
+        rows="5" 
+        onclick="contaCaracteresTextArea(this)" 
+        onkeydown="contaCaracteresTextArea(this)" 
+        onkeyup="contaCaracteresTextArea(this)"></textarea>
+        </div>
+
+        <div id="divMsg"></div>
+    </div>
+    <div><button type="button" onclick="mostrarInformacao();">Motrar informações</button></div>
+    </form>
+    <!--
+    <form action="">
+        <textarea name="descricao" id="descricao" placeholder="Digite a descrição" cols="30" rows="10"></textarea>
+        <input type="submit" value="Envair">
+    </form>
+    -->
+
+</body>
+</html>
