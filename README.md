@@ -40,3 +40,4 @@
     html.
     c. Crie um botão que mostrará o histórico no console ou em um alert, das expressões e dos
     valores computados.
+### 4.
