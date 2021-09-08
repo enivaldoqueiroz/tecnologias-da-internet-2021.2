@@ -11,12 +11,20 @@
 
         function mostrarInformacao(){
             var inputText = document.getElementById("inputText").value;
-            var op =  document.getElementById("op").value;
-            var checkbox =  document.getElementById("checkbox").value;
+            var op =  document.getElementById("op");
+            var checkbox =  document.getElementById("checkbox");
+            var textArea = document.getElementById("textArea");
+            var formaPagamento = document.getElementById("formaPagamento");
 
-            alert(  'Nome da empresa: ' + inputText + '  ' +
-                    'Tipo de atendimento: ' + op +  ' ' +
-                    'Serviços oferecidos:' + checkbox);
+            alert(  'Dados informados \n ' +
+                    'Nome da empresa: ' + inputText + ' \n ' +
+                    'Tipo de atendimento: ' + op.value +  ' \n ' +
+                    'Serviços oferecidos: ' + checkbox.value +  ' \n ' +
+                    'Forma de pagamento: ' + formaPagamento.value +  ' \n ' +
+                    'textArea: ' + textArea.value);
+                    
+
+           
             
         }
 
@@ -68,8 +76,8 @@
     <div>
         <div>Tipo de atendimento:</div>
         <div>
-            <input type="radio" name="op" id="op">Pessoa Fisica</input><br/>
-            <input type="radio" name="op" id="op">Pessoa Juridica</input>
+            <input type="radio" name="op" id="op" value="Pessoa Fisica">Pessoa Fisica</input><br/>
+            <input type="radio" name="op" id="op" value="Pessoa Juridica">Pessoa Juridica</input>
         </div>
     </div>
 
@@ -79,10 +87,10 @@
         
         <div>Serviços oferecidos:</div>
         <div>
-            <input type="checkbox" name="checkbox1" id="checkbox">Manutenção em Informatica</input><br/>
-            <input type="checkbox" name="checkbox2" id="checkbox">Logistica</input><br/>
-            <input type="checkbox" name="checkbox3" id="checkbox">Contabilidade</input><br/>
-            <input type="checkbox" name="checkbox4" id="checkbox">Outros</input><br/>
+            <input type="checkbox" name="checkbox" id="checkbox" value="Manutenção em Informatica">Manutenção em Informatica</input><br/>
+            <input type="checkbox" name="checkbox" id="checkbox" value="Logistica">Logistica</input><br/>
+            <input type="checkbox" name="checkbox" id="checkbox" value="Contabilidade">Contabilidade</input><br/>
+            <input type="checkbox" name="checkbox" id="checkbox" value="Outros">Outros</input><br/>
         </div>
     </div>
 
@@ -91,7 +99,7 @@
     <div>
         <div>Formas de pagamento:</div>
         <div>
-            <select name="servicos" id="servicos" size=5 multiple>
+            <select name="formaPagamento" id="formaPagamento" size=5 multiple>
                 <option value="">-- Selecione uma opcao --</option>
                 <option value="Boleto">Boleto</option>
                 <option value="AVista">A vista</option>
